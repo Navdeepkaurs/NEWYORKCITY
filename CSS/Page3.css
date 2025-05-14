@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: 'Font-1';
+    src: url('../Font/Chomsky.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 70px;
+    background-color: #eee;
+    scroll-behavior: smooth;
+}
+
+
+#information {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 120px;
+    padding-left: 100px;
+}
+
+#info {
+    display: flex;
+    gap: 10px;
+}
+
+#p-1 p,
+#p-2 p {
+    font-size: 12px;
+    width: 200px;
+    color: rgb(113, 113, 113);
+}
+
+#p-2 h1 {
+    color: #EC7C32;
+    font-family: 'Font-1';
+    font-size: 100px;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+    height: 150px;
+
+}
+
+#p-2 h1 span:nth-child(1) {
+    position: absolute;
+    top: 15%;
+
+}
+
+#p-2 h1 span:nth-child(2) {
+    position: absolute;
+    top: 8%;
+    left: 24%;
+}
+
+#p-2 h1 span:nth-child(3) {
+    position: absolute;
+    top: 16%;
+    bottom: 0;
+    left: 50%;
+}
+
+#p-2 h1 span:nth-child(4) {
+    position: absolute;
+    top: 1%;
+    left: 75%;
+}
+
+#p-1 h4 {
+    padding-top: 20px;
+    font-family: 'Font-1';
+    font-size: 25px;
+    line-height: 19px;
+    color: rgb(61, 61, 61);
+}
+
+
+#image1 {
+    width: 200px;
+    height: 200px;
+    background-image: url('../media/P1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    margin-bottom: 20px;
+}
+
+#image2 {
+    width: 200px;
+    height: 200px;
+    background-image: url('../media/P2.png');
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+#image3 {
+    width: 200px;
+    height: 200px;
+    background-image: url('../media/P3.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    margin-bottom: 20px;
+}
+
+#image4 {
+    width: 200px;
+    height: 100px;
+    background-image: url('../media/P4.jpg');
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(100%);
+}
+
+#image5 {
+    width: 200px;
+    height: 270px;
+    background-image: url('../media/P5.jpg');
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(100%);
+    margin-top: 20px;
+}
+
+#image6 {
+    width: 200px;
+    height: 200px;
+    background-image: url('../media/P6.jpeg');
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(100%);
+    margin-top: 20px;
+}
+
+#line {
+    width: 3px;
+    height: 460px;
+    background-color: #EC7C32;
+    opacity: 0.6;
+
+}
+
+#quote {
+    font-family: 'Font-1';
+    font-size: 35px;
+    position: absolute;
+    right: -115%;
+    bottom: 18%;
+}
+
+#header h1 {
+    font-family: 'Font-1';
+    font-size: 330px;
+    white-space: nowrap;
+    overflow: visible;
+    letter-spacing: -10px;
+    transform: scaleY(1.2);
+    color: rgb(39, 39, 39);
+    position: absolute;
+    bottom: 0;
+    top: 65%;
+    padding: 0 20px 0;
+    letter-spacing: 12px;
+}
+
+
+
+.highlight-text {
+    background-image: linear-gradient(to right, #f18944ed 100%, #f18944ed 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: black;
+    font-weight: 300;
+}
+
+
+#back {
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+    right: 3%;
+    cursor: pointer;
+    position: fixed;
+}

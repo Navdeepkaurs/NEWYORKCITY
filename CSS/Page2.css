@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: 'Font-1';
+    src: url('../Font/Chomsky.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+#heading {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+
+
+#heading h1 {
+    font-size: 100px;
+    transform: scaleY(1.1);
+    transform-origin: bottom;
+    letter-spacing: -0.05em;
+    word-spacing: -0.1em;
+}
+
+.reveal-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reveal-text {
+    overflow: hidden;
+}
+
+.reveal-text h1 {
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.reveal-text span {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+
+
+
+#heading p {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+/* boxes part -------------------------------- */
+
+#boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#boxes h2 {
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+#boxes p {
+    font-size: 12px;
+    font-weight: 340;
+}
+
+#line1 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 16px;
+    margin-left: 200px;
+}
+
+#box1 {
+    height: 120px;
+    width: 270px;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+#box2 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 210px;
+    background-image: url('../assets/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#box3 {
+    height: 200px;
+    width: 250px;
+}
+
+#line2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#box4 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#sub-box-1 {
+    position: relative;
+    background-color: aquamarine;
+    height: 84px;
+    width: 84px;
+    align-self: flex-end;
+    background-image: url('../assets/pic2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sub-box-2 {
+    position: relative;
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    background-image: url('../assets/pic3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box5 {
+    position: relative;
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    background-image: url('../assets/pic4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#box6 {
+    position: relative;
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    background-image: url('../assets/pic5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#box7 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+#sub-box-3 {
+    position: relative;
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    background-image: url('../assets/pic6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sub-box-4 {
+    position: relative;
+    background-color: aquamarine;
+    height: 84px;
+    width: 84px;
+    background-image: url('../assets/pic7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#line3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-right: 185px;
+}
+
+#box8 {
+    /* background-color: aquamarine; */
+    height: 200px;
+    width: 240px;
+    text-align: right;
+}
+
+
+#box9 {
+    position: relative;
+    background-color: aquamarine;
+    height: 200px;
+    width: 210px;
+    background-image: url('../assets/pic8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box10 {
+    /* background-color: aquamarine; */
+    height: 200px;
+    width: 280px;
+
+}
+
+
+#text-box-1 {
+    width: 270px;
+    height: 100px;
+    text-align: right;
+    position: absolute;
+    left: 2.7%;
+    top: 36.5%;
+}
+
+#text-box-2 {
+    width: 180px;
+    height: 200px;
+    text-align: right;
+    position: absolute;
+    left: 1%;
+    top: 48%;
+}
+
+#text-box-3 {
+    width: 180px;
+    height: 180px;
+    text-align: left;
+    position: absolute;
+    right: 1%;
+    bottom: 42%;
+}
+
+#text-box-4 {
+    width: 215px;
+    height: 200px;
+    text-align: left;
+    position: absolute;
+    right: 6.5%;
+    bottom: 12%;
+}
+
+.text-box {
+    visibility: hidden;
+
+}
+
+.tri {
+    visibility: hidden;
+}
+
+
+/* triangles */
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 15px solid #eee;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #eee;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 15px solid #eee;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 15px solid #eee;
+}
+
+#box2 .triangle-left {
+    position: absolute;
+    right: 0;
+    top: 6%;
+}
+
+#sub-box-1 .triangle-right {
+    position: absolute;
+    left: 0;
+    top: 6%;
+}
+
+#sub-box-2 .triangle-right {
+    position: absolute;
+    left: 0;
+    top: 6%;
+}
+
+#sub-box-3 .triangle-left {
+    position: absolute;
+    right: 0;
+    top: 6%;
+}
+
+#sub-box-4 .triangle-left {
+    position: absolute;
+    right: 0;
+    top: 6%;
+}
+
+#box5 .triangle-down {
+    position: absolute;
+    right: 10%;
+    top: 0%;
+}
+
+#box6 .triangle-up {
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+}
+
+
+#box9 .triangle-right {
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+
+#back {
+    position: absolute;
+    bottom: 5%;
+    font-size: 40px;
+    right: 3%;
+    cursor: pointer;
+}
